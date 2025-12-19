@@ -1,0 +1,17 @@
+function playPreview() {
+  const accent = document.getElementById("accent").value;
+  const gender = document.getElementById("gender").value;
+
+  const audioMap = {
+    american_male: "audio/american_male.mp3",
+    american_female: "audio/american_female.mp3",
+    british_male: "audio/british_male.mp3",
+    british_female: "audio/british_female.mp3"
+  };
+
+  const key = `${accent}_${gender}`;
+  const audio = document.getElementById("audioPlayer");
+
+  audio.src = audioMap[key];
+  audio.play();
+}
