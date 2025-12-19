@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real Estate Voice Preview</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Human-Sounding Voice Preview</h1>
+    <p class="subtitle">Paste your real estate script and preview a natural voice</p>
+
+    <textarea placeholder="Paste your property description or sales script here..."></textarea>
+
+    <div class="controls">
+      <select id="accent">
+        <option value="american">American English</option>
+        <option value="british">British English</option>
+      </select>
+
+      <select id="gender">
+        <option value="male">Male Voice</option>
+        <option value="female">Female Voice</option>
+      </select>
+
+      <select>
+        <option>Professional</option>
+        <option>Friendly</option>
+        <option>Persuasive</option>
+      </select>
+    </div>
+
+    <button onclick="playPreview()">▶ Preview Voice</button>
+
+    <audio id="audioPlayer" controls></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
